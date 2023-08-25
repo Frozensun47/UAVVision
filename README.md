@@ -1,33 +1,51 @@
 # UAVVision : Efficient Object Detection for Resource-Constrained Drones using YOLO Conversion and NGWD Enhancement
+# UAV Object Detection Enhancement Project
 
-## Object Detection on UAVs using YOLO Model Conversion and NGWD Loss
+## Introduction
 
-In this project, I successfully implemented an innovative solution for real-time object detection on Unmanned Aerial Vehicles (UAVs) using a YOLO (You Only Look Once) model converted to the ncnn framework. The primary goal was to enable efficient object detection on resource-constrained platforms such as Raspberry Pi, which are commonly deployed on drones and UAVs.
+The **UAV Object Detection Enhancement Project** is a pioneering initiative aimed at improving object detection performance for Unmanned Aerial Vehicles (UAVs) or drones, equipped with limited computational resources, specifically Raspberry Pi boards. The project utilizes cutting-edge technologies including the NCNN (Neural Network Computer Vision) library, YOLO (You Only Look Once) model architecture, and a novel approach involving image patching to enhance accuracy in detecting small-scale objects.
 
-### Project Highlights:
+## Problem Statement
 
-- **Model Conversion and Optimization**: I utilized the ncnn framework to convert the YOLO model, optimizing it for deployment on Raspberry Pi. This conversion process involved adapting the model to the target hardware, ensuring optimal performance without compromising accuracy.
+Object detection tasks are inherently complex and computationally intensive, particularly when constrained by the processing power available on drones. The primary challenge lies in achieving accurate real-time object detection while ensuring optimal resource utilization.
 
-- **Object Detection**: I implemented a robust object detection pipeline using the converted model. The model was capable of accurately detecting and localizing objects of interest in real-time video streams captured by drones.
+## Technologies Used
 
-- **Handling Small Objects**: To address the challenge of detecting small objects in high-resolution images, I adopted an innovative approach. I divided large 1920x1080 images into 16 smaller images of 240x135 resolution. This technique significantly improved the model's ability to capture small objects within the scene.
+- **NCNN Library**: The NCNN library serves as the backbone of the project, offering a lightweight framework optimized for mobile platforms and embedded systems. Its efficiency in utilizing hardware acceleration, such as GPUs and neural network accelerators, enables real-time inference on resource-constrained devices.
 
-- **Normalized Gaussian Wasserstein Distance (NGWD) Loss**: To further enhance the detection of small objects, I incorporated the NGWD loss function. This specialized loss function helped the model focus on the details of small objects, leading to improved accuracy in their detection.
+- **YOLO Model Architecture**: The project adopts the YOLO model architecture due to its ability to perform object detection in a single forward pass, making it highly efficient for real-time applications. The model is customized and optimized for the target platform, striking a balance between accuracy and computational efficiency.
 
-- **Performance Optimization**: I fine-tuned the model and its parameters to ensure optimal performance on the Raspberry Pi. This involved a balance between accuracy and real-time processing, considering the hardware limitations of the UAVs.
+- **Image Patching**: To address the challenge of detecting small objects, the innovative strategy of image patching is employed. High-resolution frames captured by the drone's Raspberry Pi camera (1920x1080) are divided into smaller patches (e.g., 240x135). This approach increases the likelihood of capturing small objects while maintaining a manageable computational load.
 
-- **Real-world Impact**: The project has practical applications in surveillance, search and rescue operations, and environmental monitoring, where drones equipped with accurate object detection capabilities can provide critical insights and decision-making support.
+- **Normalized Gaussian Wasserstein Distance Loss**: The project leverages the Normalized Gaussian Wasserstein Distance Loss function, which enhances the model's ability to accurately localize and classify objects, particularly those at smaller scales. This specialized loss function contributes to better object detection performance.
 
-### Technologies and Tools Used:
+## Workflow and Methodology
 
-- YOLO Model
-- ncnn Framework
-- Raspberry Pi
-- Image Processing
-- Machine Learning
-- Python
-- Normalized Gaussian Wasserstein Distance Loss
-- Object Localization
-- Performance Optimization
+1. **Data Acquisition**: The drone captures high-definition (1920x1080) video using the Raspberry Pi camera. The video frames are extracted to form the input data for the object detection process.
 
-This project underscores my ability to adapt and optimize machine learning models for deployment in resource-constrained environments. The successful implementation of object detection on UAVs reflects my strong skills in computer vision, model conversion, and creative problem-solving.
+2. **Image Patching**: Each high-resolution frame is divided into multiple patches, e.g., 16 patches of 240x135 dimensions. This division increases the likelihood of detecting small objects within the scene.
+
+3. **Model Inference**: The YOLO model, tailored for the target hardware, processes each image patch independently to predict object bounding box coordinates (center, height, width) and class labels.
+
+4. **Post-processing**: The predicted object information from the patches is integrated to form a coherent output representing the objects detected within the entire frame.
+
+5. **Performance Enhancement**: The utilization of the Normalized Gaussian Wasserstein Distance Loss enhances the model's capacity to accurately detect and classify objects, especially those of smaller scales.
+
+6. **Real-time Visualization**: The processed video frames, now with bounding box annotations for detected objects, are presented in real-time, providing valuable insights to drone operators.
+
+## Achievements
+
+The project's novel approach and judicious utilization of technologies yield impressive results:
+
+- **Mean Average Precision (mAP)**: The project achieves a mAP of 24.1, showcasing its accuracy in detecting and localizing objects within the frames.
+
+- **Frame Rate Performance**: The system operates at a commendable 18.8 Frames Per Second (FPS) on a Raspberry Pi 4 clocked at 1950 MHz. This high frame rate is crucial for real-time applications, allowing quick responses to dynamic environments.
+
+## Conclusion
+
+The **UAV Object Detection Enhancement Project** demonstrates a pioneering approach to address the challenges of real-time object detection on resource-constrained UAVs. By harnessing the power of the NCNN library, customizing the YOLO model architecture, implementing image patching, and utilizing specialized loss functions, the project achieves impressive accuracy and frame rate performance. This advancement opens up new horizons for UAV applications, such as surveillance, environmental monitoring, and disaster response, where real-time and accurate object detection is of paramount importance.
+
+*Note: The project was completed independently and reflects a strong blend of creativity, technical prowess, and problem-solving skills.*
+
+---
+"Pushing the boundaries of object detection in resource-constrained environments."
