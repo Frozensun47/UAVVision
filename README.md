@@ -2,7 +2,7 @@
 # UAV Object Detection Enhancement Project
 
 
-![](https://github.com/Frozensun47/UAVVision/blob/main/Extras/UAVVision_LOGO_GIF.gif)
+![](https://github.com/Frozensun47/UAVVision/blob/main/Extras/UAVVIsion_LOGO_GIF.gif)
 
 
 ## Introduction
