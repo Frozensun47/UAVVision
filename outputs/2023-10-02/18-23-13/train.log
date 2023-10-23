@@ -1,0 +1,15 @@
+[2023-10-02 18:23:13,151][DB_text_minimal-master\train.log][INFO] - DB_text_minimal-master\logs\1696251193
+[2023-10-02 18:23:15,400][numexpr.utils][INFO] - Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2023-10-02 18:23:15,400][numexpr.utils][INFO] - NumExpr defaulting to 8 threads.
+[2023-10-02 18:23:16,028][DB_text_minimal-master\train.log][INFO] - cuda
+[2023-10-02 18:23:18,767][DB_text_minimal-master\train.log][INFO] - Learning rate scheduler: reduce
+[2023-10-02 18:23:18,768][DB_text_minimal-master\train.log][INFO] - Dataset name: totaltext
+[2023-10-02 18:23:18,768][DB_text_minimal-master\train.log][INFO] - Ignore tags: ['#']
+[2023-10-02 18:23:20,203][DB_text_minimal-master\train.log][INFO] - Start training!
+[2023-10-02 18:23:57,237][DB_text_minimal-master\train.log][INFO] - [1-50] - lr: 0.005 - total_loss: 2.44956111907959 - loss: 1.4774510860443115 - acc: 0.5154297882139696 - iou: 0.45062764814162715
+[2023-10-02 18:24:30,008][DB_text_minimal-master\train.log][INFO] - [1-100] - lr: 0.005 - total_loss: 2.3934237957000732 - loss: 1.3934237957000732 - acc: 0.5076431272027572 - iou: 0.4727407132449306
+[2023-10-02 18:25:02,901][DB_text_minimal-master\train.log][INFO] - [1-150] - lr: 0.005 - total_loss: 2.372502326965332 - loss: 1.3876878023147583 - acc: 0.5053394860491691 - iou: 0.4797848303526605
+[2023-10-02 18:25:36,117][DB_text_minimal-master\train.log][INFO] - [1-200] - lr: 0.005 - total_loss: 2.2319891452789307 - loss: 1.2319891452789307 - acc: 0.5046412576918711 - iou: 0.48354099012787444
+[2023-10-02 18:26:09,008][DB_text_minimal-master\train.log][INFO] - [1-250] - lr: 0.005 - total_loss: 2.208073616027832 - loss: 1.2080738544464111 - acc: 0.5038113930806377 - iou: 0.48527232111151924
+[2023-10-02 18:26:41,911][DB_text_minimal-master\train.log][INFO] - [1-300] - lr: 0.005 - total_loss: 2.2077198028564453 - loss: 1.2077196836471558 - acc: 0.5030359648701027 - iou: 0.4860709920181866
+[2023-10-02 18:26:51,379][DB_text_minimal-master\train.log][INFO] - Train loss: 2.365861177444458

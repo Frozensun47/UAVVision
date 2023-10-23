@@ -1,0 +1,10 @@
+[2023-10-02 17:59:50,492][DB_text_minimal-master\train.log][INFO] - DB_text_minimal-master\logs\1696249790
+[2023-10-02 17:59:52,650][numexpr.utils][INFO] - Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2023-10-02 17:59:52,650][numexpr.utils][INFO] - NumExpr defaulting to 8 threads.
+[2023-10-02 17:59:53,248][DB_text_minimal-master\train.log][INFO] - cuda
+[2023-10-02 17:59:55,643][DB_text_minimal-master\train.log][INFO] - Learning rate scheduler: reduce
+[2023-10-02 17:59:55,643][DB_text_minimal-master\train.log][INFO] - Dataset name: totaltext
+[2023-10-02 17:59:55,643][DB_text_minimal-master\train.log][INFO] - Ignore tags: ['#']
+[2023-10-02 17:59:57,034][DB_text_minimal-master\train.log][INFO] - Start training!
+[2023-10-02 18:04:37,274][DB_text_minimal-master\train.log][INFO] - [1-50] - lr: 0.005 - total_loss: 2.3079402446746826 - loss: 1.3295392990112305 - acc: 0.49567280403339425 - iou: 0.469332848600934
+[2023-10-02 18:11:33,344][DB_text_minimal-master\train.log][INFO] - [1-100] - lr: 0.005 - total_loss: 2.2942099571228027 - loss: 1.2942099571228027 - acc: 0.4983155251472654 - iou: 0.4810666122367579
